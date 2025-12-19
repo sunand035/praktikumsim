@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tik Tak Top Course</title>
-    
-    <base href="https://script.google.com/macros/s/AKfycbyO0aGRSP7v15Y3E6yHbyr6EvqtvFx2ALf3XGlXL8igi3V-M-03f1ooySb91LMRbQ1f/exec">
 
+    <base href="https://script.google.com/macros/s/AKfycbyO0aGRSP7v15Y3E6yHbyr6EvqtvFx2ALf3XGlXL8igi3V-M-03f1ooySb91LMRbQ1f/exec">
 
     <!-- Bootstrap -->
     <link
@@ -25,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-</head>
+  </head>
 
   <body>
     <!-- Navbar -->
@@ -50,8 +49,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item dropdown"> 
-              <a class="nav-link dropdown-toggle" href="#layanan">Layanan</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#layanan">
+                Layanan
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -78,8 +78,8 @@
     <!-- Jumbotron -->
     <section id="home" class="jumbotron-custom text-center">
       <div class="container">
-        <h1 class="display-4 fw-bold"> Selamat Datang di</h1>
-        <h1 class="display-4 fw-bold"> Tik Tak Top Course</h1>
+        <h1 class="display-4 fw-bold">Selamat Datang di</h1>
+        <h1 class="display-4 fw-bold">Tik Tak Top Course</h1>
         <p class="lead">Lembaga Kursus Komputer Profesional & Terpercaya</p>
         <a href="#pendaftaran" class="btn btn-lg mt-3">
           <i class="fas fa-rocket"></i> Daftar Sekarang
@@ -110,19 +110,22 @@
         <h2 class="text-center mb-4">Pendaftaran Anggota</h2>
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <form>
+            <form
+              action="https://script.google.com/macros/s/AKfycbyO0aGRSP7v15Y3E6yHbyr6EvqtvFx2ALf3XGlXL8igi3V-M-03f1ooySb91LMRbQ1f/exec"
+              method="post"
+            >
               <div class="mb-3">
                 <label class="form-label">
                   <i class="fas fa-user"></i> Nama Lengkap
                 </label>
-                <input type="text" class="form-control" required />
+                <input type="text" class="form-control" name="nama" required />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">
                   <i class="fas fa-book"></i> Program Kursus
                 </label>
-                <select class="form-select" required>
+                <select class="form-select" name="program" required>
                   <option>Web Programming</option>
                   <option>Desain Grafis</option>
                   <option>Data Analysis</option>
@@ -133,21 +136,26 @@
                 <label class="form-label">
                   <i class="fas fa-id-card"></i> NIK / NIS
                 </label>
-                <input type="text" class="form-control" required />
+                <input type="text" class="form-control" name="nik" required />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">
                   <i class="fas fa-map-marker-alt"></i> Alamat
                 </label>
-                <textarea class="form-control" rows="3"></textarea>
+                <textarea class="form-control" name="alamat" rows="3"></textarea>
               </div>
 
               <div class="mb-3">
                 <label class="form-label">
                   <i class="fab fa-whatsapp"></i> WhatsApp
                 </label>
-                <input type="tel" class="form-control" required />
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="whatsapp"
+                  required
+                />
               </div>
 
               <button class="btn btn-success w-100">
@@ -159,27 +167,12 @@
       </div>
     </section>
 
-    <!--Layanan  -->
+    <!-- Informasi Layanan -->
     <section id="informasi-layanan">
       <div class="container">
         <h2 class="text-center mb-5">Informasi Layanan</h2>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#pendaftaran">
-                Pendaftaran Anggota
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#informasi-layanan">
-                Informasi Layanan
-              </a>
-            </li>
-          </ul>
-        </li>
 
         <div class="row g-4">
-          <!-- Free WiFi -->
           <div class="col-md-4">
             <div class="card h-100 text-center p-4">
               <i class="fas fa-wifi fa-3x mb-3 text-primary"></i>
@@ -190,7 +183,6 @@
             </div>
           </div>
 
-          <!-- Komputer Gaming -->
           <div class="col-md-4">
             <div class="card h-100 text-center p-4">
               <i class="fas fa-desktop fa-3x mb-3 text-success"></i>
@@ -201,7 +193,6 @@
             </div>
           </div>
 
-          <!-- Ruangan Ber-AC -->
           <div class="col-md-4">
             <div class="card h-100 text-center p-4">
               <i class="fas fa-snowflake fa-3x mb-3 text-info"></i>
@@ -209,142 +200,19 @@
               <p class="card-text">Ruangan belajar sejuk dan nyaman.</p>
             </div>
           </div>
-
-          <!-- Proyektor -->
-          <div class="col-md-4">
-            <div class="card h-100 text-center p-4">
-              <i class="fas fa-video fa-3x mb-3 text-warning"></i>
-              <h5 class="card-title">Proyektor</h5>
-              <p class="card-text">
-                Media visual untuk membantu pemahaman materi.
-              </p>
-            </div>
-          </div>
-
-          <!-- Ruang Nyaman -->
-          <div class="col-md-4">
-            <div class="card h-100 text-center p-4">
-              <i class="fas fa-couch fa-3x mb-3 text-secondary"></i>
-              <h5 class="card-title">Ruang Nyaman</h5>
-              <p class="card-text">Lingkungan bersih, tenang, dan kondusif.</p>
-            </div>
-          </div>
-
-          <!-- Instruktur -->
-          <div class="col-md-4">
-            <div class="card h-100 text-center p-4">
-              <i class="fas fa-chalkboard-teacher fa-3x mb-3 text-danger"></i>
-              <h5 class="card-title">Instruktur Berpengalaman</h5>
-              <p class="card-text">Dibimbing oleh pengajar profesional.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Koleksi -->
-    <section id="koleksi">
-      <div class="container">
-        <h2 class="text-center mb-5">Program Kursus</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f"
-                class="card-img-top"
-                alt="Web Programming"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="fas fa-laptop"></i> Web Programming
-                </h5>
-                <p class="card-text">
-                  Belajar HTML, CSS, dan JavaScript dari nol hingga mahir.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72"
-                class="card-img-top"
-                alt="Python Programming"
-              />
-              <div class="card-body">
-                <h5 class="card-title"><i class="fab fa-python"></i> Python</h5>
-                <p class="card-text">
-                  Pemrograman Python untuk pemula dan analisis data.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-                class="card-img-top"
-                alt="Excel Data Analysis"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="fas fa-chart-bar"></i> Data Analysis
-                </h5>
-                <p class="card-text">
-                  Analisis dan pengolahan data Excel untuk bisnis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-   <!-- Footer -->
-<footer class="footer-custom">
-  <div class="container">
-    <div class="row text-center text-md-start">
-      
-      <!-- Alamat -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold mb-3">Tik Tak Top Course</h5>
-        <p>
-          <i class="fas fa-map-marker-alt me-2"></i>
-          Perum Depkes Blok B,<br />
-          Kota Magelang, Jawa Tengah
+    <!-- Footer -->
+    <footer class="footer-custom">
+      <div class="container text-center">
+        <p class="mb-0">
+          &copy; 2023 Tik Tak Top Course. All Rights Reserved.
         </p>
       </div>
+    </footer>
 
-      <!-- Kontak -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold mb-3">Kontak</h5>
-        <p>
-          <i class="fas fa-phone me-2"></i> 0813-9296-8985
-        </p>
-        <p>
-          <i class="fas fa-envelope me-2"></i>
-          tiktaktopcourse@gmail.com
-        </p>
-      </div>
-
-      <!-- Sosial Media -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold mb-3">Sosial Media</h5>
-        <a href="#" class="text-white me-3 fs-4">
-          <i class="fab fa-instagram"></i> Ilyassndrr
-        </a>
-        <a href="#" class="text-white fs-4">
-          <i class="fab fa-whatsapp"></i> 0813-9296-8985
-        </a>
-      </div>
-    </div>
-    <hr />
-    <div class="text-center">
-      <p class="mb-0">
-        &copy; 2023 Tik Tak Top Course. All Rights Reserved.
-      </p>
-    </div>
-  </div>
-</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
